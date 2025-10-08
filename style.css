@@ -1,0 +1,415 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+
+}
+*h1{font-family: cormorant;
+
+}
+
+#notification {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#searchbar {
+  max-width: 200px;
+padding-left: 30px;  input[type=text],
+  select {
+font-family: inherit;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+
+  }
+}
+
+
+#logo {
+padding-left: 90px;
+  
+}
+
+.rightbar {
+  display: flex;
+  padding-right: 20px;
+}
+
+#icons {
+  display: flex;
+padding-top: 15px;
+  gap: 15px;
+}
+
+#icons i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.checkout {
+  padding: 15px 30px;
+background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #746e6e8c;
+  transition: 1s;
+  font-weight: bold;
+  font-size: 15px;
+
+}
+
+.checkout:hover {
+  background: white;
+  color: black;
+
+}
+
+nav {
+  border: none;
+  border-bottom: 2px solid gainsboro;
+  padding-bottom: 5px;
+  margin-left: 20px;
+color: #222222;
+
+}
+
+.nav li {
+margin-right: 20px;
+  padding-left: 20px;
+  display: inline-block;
+  list-style-type: none;
+  cursor: pointer;
+  overflow: hidden;
+color: #222222;
+text-decoration: none;
+}
+
+
+.nav li a,
+.dropbtn {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #222222;
+font-size: 1.148rem;
+
+}
+
+.nav li a:hover,
+.dropdown:hover .dropbtn {
+  display: flex;
+}
+
+.nav li.dropdown {
+  display: inline-block;
+  color: grey;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: grey;
+  text-decoration: wavy;
+  display: block;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+
+.lowhead {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+  border: none;
+  border-bottom: 2px solid gainsboro;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #7d7d7d;
+  font-size: small;}
+
+#COLLECTION {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  margin: 15px;
+}
+
+.collection-product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.shop {
+  margin-top: 40px;
+  margin-left: 120px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 15px 55px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.shop:hover {
+  background-color: black;
+  color: white;
+}
+
+.banner1 {
+  padding-top: 2em;
+}
+
+.banner2 {
+  padding-top: 2em;
+}
+.Browse h1{
+  text-align: center;
+  padding: 20px;
+}
+.Browse p{
+  text-align:center;
+  font-family:lato;
+  color: grey;
+  font-size: 0.833rem;
+}
+
+.modaabout {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  margin: 20px 0 20px;
+  border: none;
+  border-top: 1px solid #dddddd;
+  border-bottom:1px solid #dddddd;
+
+}
+.abttxt h2{
+  padding: 20px;
+font-family:serif 
+font-size 1.5em;
+font-weight: normal;
+}
+.abttxt p{
+padding-bottom: 25px;
+   text-align:left;
+   font-family: sans-serif;
+   color: grey;font: size 2px;
+   line-height: 1.5rem;
+}
+.abttxt h3{
+  padding-bottom: 25px;
+  font-family:serif 
+  font-size 1.5em;
+font-weight: normal;
+}
+.abttxt {
+  display: block;
+  text-align: left;
+  padding: 24px;
+
+  input[type=text],
+  select {
+    padding-top:10px;
+     padding-right: 80px;
+     padding-bottom: 10px;
+  }
+}
+
+.abtimg {
+  width: 100%;
+  height: 100%;
+  margin: 40px 0 20px;
+}
+
+
+.swiper {
+  background: white;
+  margin-top: 50;
+  padding: 10;
+  position: relative;
+  height: 70%;
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.socialmedia {
+  
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  gap: 1rem;
+  list-style: none;
+}
+
+.social li {
+  position: relative;
+  flex-basis: 4.5rem;
+}
+
+.social li::after {
+  position: absolute;
+  /* content: "Tooltip"; */
+  content: attr(data-tooltip);
+  inset: -45% auto auto 50%;
+  z-index: -1;
+  translate: -50%;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  color: #fff;
+  /* background: #070707; */
+  background: var(--bg, #070707);
+  border-radius: 0.25rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  /* transition: all 0.3s ease-in-out; */
+  transition: inset 0.4s cubic-bezier(0.47, 2, 0.41, 1.5),
+    visibility 0.3s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.social li:has(a:hover, a:focus-visible)::after {
+  opacity: 1;
+  visibility: visible;
+  inset-block-start: -60%;
+}
+
+.social a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  font-size: 1.75rem;
+  color: #070707;
+  border: 1px solid;
+  border-radius: 100%;
+  text-decoration: none;
+  outline: none;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out;
+}
+
+.social a>i {
+  position: relative;
+  z-index: 1;
+}
+
+.social a::after {
+  position: absolute;
+  content: "";
+  inset: 100% 0 0;
+  /* background: #070707; */
+  background: var(--bg, #070707);
+  pointer-events: none;
+  transition: inset 0.3s ease-in-out;
+}
+
+.social a:hover,
+.social a:focus-visible {
+  color: #fff;
+}
+
+.social a:hover::after,
+.social a:focus-visible::after {
+  inset-block-start: 0;
+}
+
+.cdcd-icon {
+  font-size: 25px;
+  padding-right: 5px;
+}
+.mdiv{
+  border: none;
+    border-top:1px solid #dddddd;
+padding-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px;
+}
+
+.help ul{
+  list-style-type: none;
+  line-height: 30px;
+  color: grey;
+  cursor: pointer;
+ }
+ .page ul{
+list-style-type: none;
+line-height: 30px;
+display: block;
+color: grey;
+ }
+ .info ul{
+  list-style-type: none;
+  line-height: 30px;
+  color: grey;
+ }
+
+ .rightdiv {
+  position:relative;
+  left: 130px;
+  white-space: wrap;
+     input[type=text],
+  select {
+    padding-top:10px;
+     padding-right: 80px;
+     padding-bottom: 10px;
+  }
+  }
+ 
+  .rightdiv h2{
+    padding-bottom: 15px;
+  }
+  .rightdiv p{
+width: 300px;
+line-height: 21.5px;
+font-size: 12px;
+  }
