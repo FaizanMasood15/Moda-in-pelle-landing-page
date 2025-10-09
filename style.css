@@ -15,14 +15,18 @@
   text-align: center;
   padding: 5px;
 }
-
-.header {
+.hamburger{
+display: none;}
+.header { 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 #searchbar {
+    display: none;
+
   max-width: 200px;
 padding-left: 30px;  input[type=text],
   select {
@@ -32,18 +36,18 @@ font-family: inherit;
     border: none;
     border-bottom: 2px solid #ccc;
     outline: none;
-
   }
+  ;
 }
 
 
 #logo {
 padding-left: 90px;
-  
+  display: none;
 }
 
 .rightbar {
-  display: flex;
+    display: none;
   padding-right: 20px;
 }
 
@@ -77,6 +81,7 @@ background-color: black;
 }
 
 nav {
+  display: none;
   border: none;
   border-bottom: 2px solid gainsboro;
   padding-bottom: 5px;
@@ -139,7 +144,7 @@ font-size: 1.148rem;
 }
 
 .lowhead {
-  display: flex;
+  display: none;
   justify-content: space-evenly;
   padding: 15px;
   border: none;
@@ -411,3 +416,73 @@ width: 300px;
 line-height: 21.5px;
 font-size: 12px;
   }
+  @media screen and (max-width: 650px)
+  {
+    #notification{
+      padding: 8px;
+text-align: center;
+    }
+   #logo{
+    display:block;
+    padding: 0;
+    
+   } 
+   .lowhead{
+display: none;  
+ }
+.hamburger {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.menu-item i {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.menu-item:hover {
+  color: grey;
+}
+
+.icontext {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+  }
+@media (min-width: 651px) and (max-width: 1423px) {
+
+  #searchbar{
+    display: block;
+  }
+  #logo
+  {
+    display: block;
+  }
+  .rightbar{
+    display: block;
+    display: flex;
+  }
+
+  nav{
+  display: block;
+}
+.lowhead{
+  display: block;
+  display: flex;
+}
+
+}
