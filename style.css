@@ -15,6 +15,9 @@
   text-align: center;
   padding: 5px;
 }
+.header{
+  display: none;
+}
 .hamburger{
 display: none;}
 .header { 
@@ -245,9 +248,8 @@ font-weight: normal;
 
   input[type=text],
   select {
-    padding-top:10px;
-     padding-right: 80px;
-     padding-bottom: 10px;
+    padding:10px;
+     width: 50%;
   }
 }
 .abtimg {
@@ -294,13 +296,13 @@ font-weight: normal;
   display: flex;
   justify-content: center;
   flex-flow: wrap;
-  gap: 1rem;
+  gap: 10px;
   list-style: none;
 }
 
 .social li {
   position: relative;
-  flex-basis: 4.5rem;
+  flex-basis: 2.5rem;
 }
 
 .social li::after {
@@ -336,7 +338,7 @@ font-weight: normal;
   justify-content: center;
   align-items: center;
   aspect-ratio: 1;
-  font-size: 1.75rem;
+  font-size: 1rem;
   color: #070707;
   border: 1px solid;
   border-radius: 100%;
@@ -383,6 +385,13 @@ padding-top: 30px;
   justify-content: space-evenly;
   margin: 30px;
 }
+.leftdiv{
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  justify-content: space-evenly;
+  padding: 0%;
+}
 
 .help ul{
   list-style-type: none;
@@ -403,14 +412,13 @@ color: grey;
  }
 
  .rightdiv {
-  position:relative;
-  left: 130px;
   white-space: wrap;
      input[type=text],
   select {
     padding-top:10px;
      padding-right: 80px;
      padding-bottom: 10px;
+     padding-left: 10px;
   }
   }
  
@@ -418,7 +426,6 @@ color: grey;
     padding-bottom: 15px;
   }
   .rightdiv p{
-width: 300px;
 line-height: 21.5px;
 font-size: 12px;
   }
@@ -426,8 +433,11 @@ font-size: 12px;
 
 
 
-  @media screen and (max-width: 650px)
+  @media screen and (max-width: 750px)
   {
+    .header{
+      display: block;
+    }
     #notification{
       padding: 8px;
 text-align: center;
@@ -440,7 +450,13 @@ text-align: center;
    } 
    .lowhead{
 display: none;  
+
+
  }
+ nav{
+  display: block;
+  
+}
 .hamburger {
   display: flex;
   justify-content: space-around; 
@@ -459,7 +475,7 @@ display: none;
   cursor: pointer;
 }
 .navcnt{
-  display: block;
+  display: none;
 }
 
 .menu-item i {
@@ -505,10 +521,52 @@ display: none;
   #COLLECTION p {
     font-size: small;
   }
-}
 
   
-@media (min-width: 651px)  {
+.modaabout{
+  flex-direction: column;
+}
+
+.abttxt {
+
+
+  input[type=text],
+  select {
+    padding:10px;
+     width: 100%;
+  }
+}
+.abttxt h2{
+  text-align: center;
+
+}
+h3{
+  text-align: center;
+  
+}
+
+.mdiv{
+  flex-direction: column;
+}
+.rightdiv {
+  padding: 30px;
+margin: 0px;
+white-space: wrap;
+     input[type=text],
+  select {
+    padding:10px;
+     width: 100%;
+     text-align: left;
+  }
+}
+.rightdiv h2{
+  text-align: center;
+}
+
+  }
+@media only screen and (max-width: 1024px) and (min-width: 750px) {
+   
+
 
   #searchbar{
     display: block;
@@ -524,10 +582,75 @@ display: none;
 
   nav{
   display: block;
+  flex-direction: row;
+}
+.navcnt{
+  display: flex;
+    flex-wrap: nowrap;
+
+}
+
+ 
+.modaabout{
+  flex-direction: column;
+}
+.abttxt h2{
+  text-align: center;
+
+}
+h3{
+  text-align: center;
+  
+}
+
+.mdiv{
+  flex-direction: column;
+}
+.rightdiv {
+  padding: 30px;
+margin: 0px;
+white-space: wrap;
+     input[type=text],
+  select {
+    padding:10px;
+     width: 100%;
+     text-align: left;
+  }
+}
+.rightdiv h2 ,p{
+  text-align: center;
+}
+
+}
+
+
+@media (min-width: 1025px)  {
+
+
+
+  #searchbar{
+    display: block;
+  }
+  #logo
+  {
+    display: block;
+  }
+  .rightbar{
+    display: block;
+    display: flex;
+  }
+
+  nav{
+  display: block;
+  flex-direction: row;
 }
 .lowhead{
   display: block;
   display: flex;
+}
+.rightdiv{
+  width: 300px;
+
 }
 
 }
