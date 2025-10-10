@@ -71,10 +71,8 @@
     <span class="icontext">Price</span>
   </div>
 </div>
-
-
     <nav>
-        <ul class="nav">
+        <ul class="nav" id="nav">
             <li><a href="#sale">Sale</a></li>
             <li><a href="#newin">NewIN</a></li>
             <li><a href="#home">Home</a></li>
@@ -92,7 +90,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#news">News</a></li>
             <li><a href="#sale">Sale</a></li>
-                        <li><a href="#sale">Sale</a></li>
+            <li><a href="#sale">Sale</a></li>
 
         </ul>
     </nav>
@@ -151,8 +149,6 @@
     <div class="carousel">
 
     </div>
-
-
     <!-- Swiper -->
     <div class="Browse">
         <h1 style="font-family: cormorant; font-size: 1.5rem;"> Browse Our Collections</h1>
@@ -201,9 +197,6 @@
 
         </div>
     </div>
-
-
-  
 <footer>
     <div class="socialmedia">
         <ul class="social">
@@ -337,10 +330,10 @@
         });
 
     const hamburger = document.getElementById('hamburger');
-    const rightbar = document.getElementById('rightbar');
+    const rightbar = document.getElementById('nav');
 
     hamburger.addEventListener('click', () => {
-      rightbar.classList.toggle('show');
+      nav.classList.toggle('show');
       hamburger.classList.toggle('active');
     });
     </script>

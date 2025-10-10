@@ -416,6 +416,10 @@ width: 300px;
 line-height: 21.5px;
 font-size: 12px;
   }
+
+
+
+
   @media screen and (max-width: 650px)
   {
     #notification{
@@ -425,6 +429,7 @@ text-align: center;
    #logo{
     display:block;
     padding: 0;
+    align-items: center;
     
    } 
    .lowhead{
@@ -447,6 +452,9 @@ display: none;
   color: #333;
   cursor: pointer;
 }
+.nav{
+  display: block;
+}
 
 .menu-item i {
   font-size: 20px;
@@ -460,6 +468,38 @@ display: none;
 .icontext {
   font-size: 12px;
   text-transform: capitalize;
+}
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .collection-product {
+    flex-direction: column; /* Stack the images vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 20px; /* Space between each product */
+  }
+
+  .collection-product div {
+    width: 90%; /* Make each image container smaller to fit screen */
+    text-align: center;
+    padding: 20px;
+  }
+
+  .collection-product img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+  }
+
+  .shop {
+    margin: 15px 0 0 0; /* Remove large margin for mobile */
+    padding: 12px 40px; /* Slightly smaller button */
+  }
+
+  #COLLECTION h1 {
+    font-size: 1.5rem; /* Adjust title size for mobile */
+  }
+
+  #COLLECTION p {
+    font-size: 1rem;
+  }
 }
 
   }
