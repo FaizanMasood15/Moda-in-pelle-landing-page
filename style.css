@@ -215,11 +215,11 @@ line-height: 30px;
 .modaabout {
   display: flex;
   flex-direction: row;
-  overflow: hidden;
   margin: 20px 0 20px;
   border: none;
   border-top: 1px solid #dddddd;
   border-bottom:1px solid #dddddd;
+  width: "100%";
 
 }
 .abttxt h2{
@@ -242,7 +242,6 @@ padding-bottom: 25px;
 font-weight: normal;
 }
 .abttxt {
-  display: block;
   text-align: left;
   padding: 24px;
 
@@ -255,25 +254,61 @@ font-weight: normal;
 .abtimg {
   width: 100%;
   height: 100%;
-  margin: 40px 0 20px;
+  margin: 40px 0 ;
 }
+/* CSS (add to your stylesheet) */
 
+.Browse { margin-bottom: 1rem; }
+
+/* category link row */
+.category-row {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+justify-content: center;
+line-height:100px;
+}
+.category-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px 10px;
+  font-family: "cormorant";
+  color: #919191;
+  font-size: 19px;
+}
+.category-btn.active {
+  text-decoration: underline;
+  color: #111;
+}
+.sep { color: #666; padding: 0 6px; }
+
+/* Swiper container wrapper visibility */
+.swiper-container { display: none; }
+.swiper-container.active { display: block; }
+
+/* Your existing styles, slightly adjusted with units */
 .swiper {
   background: white;
-  margin-top: 50;
-  padding: 10;
+
+  padding: 0 10 50 20;
   position: relative;
-  height: 70%;
   width: 100%;
+  height: 60%;
+  /* height left auto so slides size naturally; if you want fixed height, set it */
 }
+
+.swiper-wrapper { align-items: stretch; }
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
   background: #444;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .swiper-slide img {
@@ -282,6 +317,24 @@ font-weight: normal;
   height: 100%;
   object-fit: cover;
 }
+
+/* Navigation arrows style (default Swiper classes) */
+.swiper-button-prev,
+.swiper-button-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 14px;
+}
+
+
 
 .socialmedia {
   
@@ -535,6 +588,8 @@ display: none;
     padding:10px;
      width: 100%;
   }
+
+
 }
 .abttxt h2{
   text-align: center;
@@ -594,6 +649,10 @@ white-space: wrap;
 .modaabout{
   flex-direction: column;
 }
+.abtimg {
+  width: 100%;
+  height: 100%;
+}
 .abttxt h2{
   text-align: center;
 
@@ -602,7 +661,16 @@ h3{
   text-align: center;
   
 }
+.abttxt {
 
+text-align: center;
+  input[type=text],
+  select {
+    justify-content: center;
+     width:50%;
+  }
+
+  
 .mdiv{
   flex-direction: column;
 }
@@ -622,7 +690,7 @@ white-space: wrap;
 }
 
 }
-
+}
 
 @media (min-width: 1025px)  {
 
@@ -651,6 +719,10 @@ white-space: wrap;
 .rightdiv{
   width: 300px;
 
+}
+.abtimg {
+  width: 100%;
+  height: 100%;
 }
 
 }

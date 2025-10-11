@@ -155,29 +155,79 @@
     <div class="carousel">
 
     </div>
-    <!-- Swiper -->
-    <div class="Browse">
-        <h1 style="font-family: cormorant; font-size: 1.5rem;"> Browse Our Collections</h1>
-        <p>
-            Discover our stunning collection of shoes, boots, bags and accessories, designed with love and crafted with
-            care for the ultimate in style and comfort.
-        </p>
-    </div>
+    <!-- HTML -->
+<div class="Browse">
+  <h1 style="font-family: cormorant; font-size: 1.5rem;">Browse Our Collections</h1>
+  <p>
+    Discover our stunning collection of shoes, boots, bags and accessories, designed with love and crafted with care for the ultimate in style and comfort.
+  </p>
 
+  <!-- Category links row (after the p tag) -->
+  <div class="category-row">
+    <button class="category-btn active" data-target="newin" >New In</button>
+    <span class="sep">|</span>
+    <button class="category-btn" data-target="sale">Shop Sale</button>
+    <span class="sep">|</span>
+    <button class="category-btn" data-target="moda">Moda Must Haves</button>
+  </div>
+</div>
+
+<!-- SWIPERS: one container per category -->
+<!-- Note: each container uses class="swiper swiper-container" and contains its own nav/pagination -->
+<div class="swipers-wrap">
+  <!-- New In -->
+  <div class="swiper-container active" data-cat="newin">
     <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="Screenshot 2025-10-04 142000.png"></div>
-            <div class="swiper-slide"><img src="Screenshot 2025-10-04 142008.png"></div>
-            <div class="swiper-slide"><img src="Screenshot 2025-10-04 142035.png"></div>
-            <div class="swiper-slide"><img src="ordenia-burgundy-leather-p16522-110691_image.jpg"></div>
-            <div class="swiper-slide"><img src="Screenshot 2025-10-04 142000.png"></div>
-            <div class="swiper-slide"><img src="Screenshot 2025-10-04 142000.png"></div>
-            <div class="swiper-slide"><img src="Screenshot 2025-10-04 142000.png"></div>
-            <div class="swiper-slide"><img src="Screenshot 2025-10-04 142000.png"></div>
-            <div class="swiper-slide">Slide 9</div>
-        </div>
-        <div class="swiper-pagination"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="Screenshot 2025-10-04 142000.png" alt=""></div>
+        <div class="swiper-slide"><img src="Screenshot 2025-10-04 142008.png" alt=""></div>
+        <div class="swiper-slide"><img src="Screenshot 2025-10-04 142035.png" alt=""></div>
+         <div class="swiper-slide"><img src="Screenshot 2025-10-04 142000.png" alt=""></div>
+        <div class="swiper-slide"><img src="Screenshot 2025-10-04 142008.png" alt=""></div>
+        <div class="swiper-slide"><img src="Screenshot 2025-10-04 142035.png" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
+  </div>
+
+  <!-- Shop Sale -->
+  <div class="swiper-container" data-cat="sale">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="ordenia-burgundy-leather-p16522-110691_image.jpg" alt=""></div>
+       
+        <div class="swiper-slide"><img src="Screenshot 2025-10-04 142000.png" alt=""></div>
+        <div class="swiper-slide"><img src="Screenshot 2025-10-04 142008.png" alt=""></div>
+        <div class="swiper-slide"><img src="Screenshot 2025-10-04 142035.png" alt=""></div>
+         <div class="swiper-slide"><img src="Screenshot 2025-10-04 142000.png" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+
+  <!-- Moda Must Haves -->
+  <div class="swiper-container" data-cat="moda">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="Screenshot 2025-10-04 142000.png" alt=""></div>
+        <div class="swiper-slide"><img src="Screenshot 2025-10-04 142000.png" alt=""></div>
+        <div class="swiper-slide"><img src="Screenshot 2025-10-04 142000.png" alt=""></div>
+                <div class="swiper-slide"><img src="Screenshot 2025-10-04 142000.png" alt=""></div>
+        <div class="swiper-slide"><img src="Screenshot 2025-10-04 142008.png" alt=""></div>
+        <div class="swiper-slide"><img src="Screenshot 2025-10-04 142035.png" alt=""></div>
+         <div class="swiper-slide"><img src="Screenshot 2025-10-04 142000.png" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</div>
+
 
     <div class="modaabout">
         <div class="abttxt">
@@ -198,8 +248,8 @@
             </h3>
             <input type="text" placeholder="eg.TS!18">
         </div>
-        <div class="abtimg" width="100%" >
-            <img src="Screenshot 2025-10-06 124408.png" ;>
+        <div class="abtimg" >
+            <img src="Screenshot 2025-10-06 124408.png"width="100%">
 
         </div>
     </div>
@@ -315,36 +365,89 @@
 
 </footer>
   <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 4,
-                    spaceBetween: 40,
-                },
-                1024: {
-                    slidesPerView: 5,
-                    spaceBetween: 50,
-                },
-            },
-        });
+    
 
-    const hamburger = document.getElementById('hamburger');
-    const rightbar = document.getElementById('nav');
+// find each .swiper element and initialize Swiper on that element
+const swiperElements = document.querySelectorAll('.swipers-wrap .swiper');
 
-    hamburger.addEventListener('click', () => {
-      nav.classList.toggle('show');
-      hamburger.classList.toggle('active');
-    });
+const swiperMap = new Map();
+
+swiperElements.forEach((el) => {
+  // create instance bound to element
+  const swiperInstance = new Swiper(el, {
+    slidesPerView: 1,
+    spaceBetween: 5,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: el.querySelector('.swiper-pagination'),
+      clickable: true,
+    },
+    navigation: {
+      nextEl: el.querySelector('.swiper-button-next'),
+      prevEl: el.querySelector('.swiper-button-prev'),
+    },
+    breakpoints: {
+      350: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      650: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      850: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 40,
+      },
+    },
+  });
+
+  // map DOM element -> instance so we can call .update() or control autoplay
+  swiperMap.set(el.closest('.swiper-container'), swiperInstance);
+});
+
+// Category buttons behaviour: swap visible container
+const categoryBtns = document.querySelectorAll('.category-btn');
+const containers = document.querySelectorAll('.swiper-container');
+
+function showCategory(targetKey) {
+  containers.forEach((c) => {
+    if (c.dataset.cat === targetKey) {
+      c.classList.add('active');
+      const sw = swiperMap.get(c);
+      if (sw) {
+        sw.update();             // ensure sizes are correct after showing
+        sw.autoplay.start();     // start autoplay for visible one
+      }
+    } else {
+      c.classList.remove('active');
+      const sw = swiperMap.get(c);
+      if (sw) sw.autoplay.stop(); // stop autoplay on hidden ones
+    }
+  });
+
+  categoryBtns.forEach(b => b.classList.toggle('active', b.dataset.target === targetKey));
+}
+
+// wire buttons
+categoryBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    showCategory(btn.dataset.target);
+  });
+});
+
+// initialize default visible category (the one with .active btn or first)
+const defaultBtn = document.querySelector('.category-btn.active') || categoryBtns[0];
+if (defaultBtn) showCategory(defaultBtn.dataset.target);
+
     </script>
 </body>
 
