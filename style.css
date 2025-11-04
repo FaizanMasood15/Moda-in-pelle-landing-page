@@ -522,7 +522,13 @@ font-size: 12px;
 
 
 
-
+@media screen and  (max-width:500px){
+  .leftdiv{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+  }
+}
   @media screen and (max-width: 750px)
   {
     .tophead{
