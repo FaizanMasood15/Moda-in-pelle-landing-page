@@ -5,22 +5,28 @@
   font-family: "Lato", sans-serif;
 
 }
-*h1{font-family: cormorant;
+*h1{
+  font-family:cormorant;
 
 }
-
-#notification {
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.notification {
   background-color: black;
   color: white;
   text-align: center;
   padding: 5px;
 }
-.header{
+.tophead{
   display: none;
 }
 .hamburger{
 display: none;}
-.header { 
+.tophead { 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,7 +41,7 @@ padding-left: 30px;  input[type=text],
   select {
 font-family: inherit;
     padding: 12px;
-    margin: 8px 0;
+    margin-top: 8px;
     border: none;
     border-bottom: 2px solid #ccc;
     outline: none;
@@ -88,7 +94,6 @@ nav {
   border: none;
   border-bottom: 2px solid gainsboro;
   padding-bottom: 5px;
-  margin-left: 20px;
 color: #222222;
 
 }
@@ -104,7 +109,6 @@ list-style-type: none;
 }
  
 li a,.dropbtn {
-    margin-right:30px;
   display: inline-block;
   text-align: center;
   padding: 14px 16px;
@@ -155,12 +159,23 @@ font-size: 1.148rem;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: #7d7d7d;
   font-size: small;}
+.hero {
+  width: 100%;
+  max-width: 1200px; /* match your container width */
+  height: auto;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block; /* removes small extra gap from inline images */
+  object-fit: cover; /* keeps proportion while filling width */
+}
 
 #COLLECTION {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
-  margin: 15px;
 }
 #COLLECTION h1 {
   font-size: 2.0rem;
@@ -170,23 +185,37 @@ font-size: 1.148rem;
 line-height: 30px;
 
 } 
-
 .collection-product {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-bottom: 10px;
+  flex-wrap: wrap; /* allows images to move to next line on small screens */
+  justify-content: center; /* center items evenly */
+  gap: 20px; /* adds equal space between all items */
+  padding-bottom: 20px;
+}
+
+.collection-product div {
+  flex: 1 1 300px; /* responsive width for each item */
+  max-width: 380px;
+  text-align: center; /* center buttons under images */
+}
+
+.collection-product img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px; /* optional, for smoother look */
+  object-fit: cover;
 }
 
 .shop {
-  margin-top: 40px;
-  margin-left: 120px;
+  margin-top: 15px; /* smaller, consistent spacing */
   background-color: white;
   color: black;
   border: 1px solid black;
-  padding: 15px 55px;
+  padding: 12px 35px;
   cursor: pointer;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 .shop:hover {
@@ -196,11 +225,29 @@ line-height: 30px;
 
 .banner1 {
   padding-top: 2em;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;  
 }
-
+.banner1 img{
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
 .banner2 {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
   padding-top: 2em;
 }
+.banner2 img{
+width: 100%;
+height: auto;
+display: block;
+object-fit: cover;
+}
+
 .Browse h1{
   text-align: center;
   padding: 20px;
@@ -215,17 +262,15 @@ line-height: 30px;
 .modaabout {
   display: flex;
   flex-direction: row;
-  margin: 20px 0 20px;
   border: none;
   border-top: 1px solid #dddddd;
-  border-bottom:1px solid #dddddd;
-  width: "100%";
+
 
 }
 .abttxt h2{
   padding: 20px;
-font-family:serif 
-font-size 1.5em;
+font-family:serif;
+font-size: 1.5em;
 font-weight: normal;
 }
 .abttxt p{
@@ -254,7 +299,7 @@ font-weight: normal;
 .abtimg {
   width: 100%;
   height: 100%;
-  margin: 40px 0 ;
+  margin-top: 40px 
 }
 /* CSS (add to your stylesheet) */
 
@@ -291,30 +336,30 @@ line-height:100px;
 
 /* Your existing styles, slightly adjusted with units */
 .swiper {
-  background: white;
-
-  padding: 0 10 50 20;
-  position: relative;
   width: 100%;
-  height: 60%;
-  /* height left auto so slides size naturally; if you want fixed height, set it */
+  height: 100%;
+      max-height: 250px;
+
+  background: white; /* optional */
 }
 
 .swiper-wrapper { align-items: stretch; }
 
 .swiper-slide {
-  text-align: center;
-  background: #444;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
+        max-height: 250px;
+
+  display: block; /* removes vertical centering gap */
   overflow: hidden;
 }
 
 .swiper-slide img {
   display: block;
-  width: 100%;
+  width: 100%; 
+  max-width: 1200px;
   height: 100%;
+    max-height: 250px;
+
   object-fit: cover;
 }
 
@@ -336,14 +381,6 @@ line-height:100px;
 
 
 
-.socialmedia {
-  
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-  background-color: white;
-  box-sizing: border-box;
-}
 
 .social {
   display: flex;
@@ -351,6 +388,7 @@ line-height:100px;
   flex-flow: wrap;
   gap: 10px;
   list-style: none;
+  padding-bottom: 30px;
 }
 
 .social li {
@@ -436,7 +474,6 @@ line-height:100px;
 padding-top: 30px;
   display: flex;
   justify-content: space-evenly;
-  margin: 30px;
 }
 .leftdiv{
   display: flex;
@@ -488,7 +525,7 @@ font-size: 12px;
 
   @media screen and (max-width: 750px)
   {
-    .header{
+    .tophead{
       display: block;
     }
     #notification{
@@ -563,7 +600,7 @@ display: none;
   }
 
   .shop {
-    margin: 15px 0 0 0;  
+    margin-top: 15px;  
     padding: 12px 40px; 
   }
 
@@ -605,7 +642,6 @@ h3{
 }
 .rightdiv {
   padding: 30px;
-margin: 0px;
 white-space: wrap;
      input[type=text],
   select {
@@ -676,7 +712,6 @@ text-align: center;
 }
 .rightdiv {
   padding: 30px;
-margin: 0px;
 white-space: wrap;
      input[type=text],
   select {
